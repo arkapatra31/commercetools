@@ -1,0 +1,13 @@
+{
+  "name": "@b2c/server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "rimraf dist && tsc --build",
+    "start": "ts-node-dev src/index.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}

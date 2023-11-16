@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": false,
+    "strict": true,
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "./server"
+    }
+  ]
+}

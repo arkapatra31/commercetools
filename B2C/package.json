@@ -8,7 +8,7 @@
     "clean-build": "rimraf dist && npm run build -ws && npm run build",
     "start": "npm start -w @b2c/server"
   },
-  "author": "",
+  "author": "Arka Patra",
   "license": "ISC",
   "workspaces": [
     "server",

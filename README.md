@@ -1,2 +1,3 @@
 # commercetools
-Commercetools
+
+Commercetools interaction with GraphQL Endpoints

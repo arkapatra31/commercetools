@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.configDotenv({ path: "../../.env" });
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 // import { readFile } from "node:fs/promises";
@@ -7,6 +9,8 @@ import { customersSchema, productsSchema } from "@b2c/schema";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 import { mergeResolvers, mergeTypeDefs } from "@graphql-tools/merge";
 
+const port = parseInt(process.env.PORT ?? "9000");
+
 async function startApolloServer() {
   //const typeDefs = await fs.readFile("schema.graphql", "utf-8"); //await readFile("./schema.graphql", "utf-8");
   const schema = makeExecutableSchema({
@@ -15,7 +19,7 @@ async function startApolloServer() {
   });
   const server = new ApolloServer({ schema });
   const { url } = await startStandaloneServer(server, {
-    listen: { port: 9000 },
+    listen: { port: port },
   });
   return url;
 }

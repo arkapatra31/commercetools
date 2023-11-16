@@ -1,0 +1,21 @@
+export let getProducts = `
+query{
+  products{
+    results{
+      id
+      key
+      version
+      skus
+      productType{
+        key
+        name
+      },
+      masterData{
+        current{
+          name
+          description
+        }
+      }
+    }
+  }
+}`;

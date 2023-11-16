@@ -1,0 +1,12 @@
+{
+  "name": "@b2c/customers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "author": "",
+  "license": "ISC"
+}

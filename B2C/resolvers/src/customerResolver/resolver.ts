@@ -1,12 +1,18 @@
+import dotenv from "dotenv";
+dotenv.configDotenv({ path: "../../.env" });
 import axios from "axios";
-import { fetchCustomersQuery } from "../queries/fetchCustomer";
-const apiUrl =
-  "https://api.australia-southeast1.gcp.commercetools.com/glass-onion/graphql";
-const query = fetchCustomersQuery;
+import { getCustomersQuery } from "@b2c/queries";
+
+const apiUrl = process.env.GQL_ENDPOINT ?? "";
+const accessToken = process.env.ACCESS_TOKEN;
+
+const query = getCustomersQuery;
+
 const headers = {
   "Content-Type": "application/json",
-  Authorization: `Bearer e1F4QNtEDxTnhpOV4MMyhC6zqHCoLL27`,
+  Authorization: `Bearer ${accessToken}`,
 };
+
 export const resolvers = {
   Query: {
     fetchCustomers: async (_root: any, { limit }: any) => {

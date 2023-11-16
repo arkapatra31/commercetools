@@ -1,7 +1,7 @@
 import { gql } from "graphql-tag";
 export const typeDefs = gql`
   type Query {
-    fetchCustomers: [CustomerResult]
+    fetchCustomers(limit: Int): [CustomerResult]
   }
 
   type CustomerResult {

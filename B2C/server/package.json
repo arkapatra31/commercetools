@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@b2c/resolvers": "^1.0.0",
+    "@b2c/schema": "^1.0.0"
+  },
   "scripts": {
-    "build": "rimraf dist && tsc --build",
+    "build": "tsc --build",
     "start": "ts-node-dev src/index.ts"
   },
   "author": "",

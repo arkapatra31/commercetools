@@ -1,0 +1,22 @@
+export let getCustomersQuery = `
+  query{
+  customers{
+    results{
+      id
+      customerNumber
+      email
+      addresses{
+        id
+        streetName
+        streetName
+        state
+        country
+      }
+      firstName
+      lastName
+      title
+      isEmailVerified
+    }
+  }
+}
+`;

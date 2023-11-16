@@ -1,5 +1,5 @@
 type Query {
-  fetchCustomers: [CustomerResult]
+  fetchCustomers(limit: Int): [CustomerResult]
 }
 
 type CustomerResult {

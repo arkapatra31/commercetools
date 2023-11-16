@@ -15,6 +15,21 @@
   "references": [
     {
       "path": "./server"
+    },
+    {
+      "path": "./packages/customers"
+    },
+    {
+      "path": "./packages/products"
+    },
+    {
+      "path": "./resolvers"
+    },
+    {
+      "path": "./queries"
+    },
+    {
+      "path": "./schema"
     }
   ]
 }

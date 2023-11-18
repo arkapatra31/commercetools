@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "devDependencies": {
     "@b2c/resolvers": "^1.0.0",
-    "@b2c/schema": "^1.0.0"
+    "@b2c/schema": "^1.0.0",
+    "@b2c/mutations": "^1.0.0"
   },
   "scripts": {
     "build": "tsc --build",

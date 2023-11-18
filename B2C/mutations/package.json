@@ -1,11 +1,9 @@
 {
-  "name": "@b2c/resolvers",
+  "name": "@b2c/mutations",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "dependencies": {
-    "@b2c/mutations": "^1.0.0"
-  },
+  "devDependencies": {},
   "scripts": {
     "build": "tsc --build"
   },

@@ -29,6 +29,9 @@
       "path": "./queries"
     },
     {
+      "path": "./mutations"
+    },
+    {
       "path": "./schema"
     }
   ]

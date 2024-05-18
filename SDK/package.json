@@ -1,0 +1,22 @@
+{
+  "name": "sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "clean-build": "rimraf dist && npm run build -ws && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@commercetools/platform-sdk": "^7.8.0",
+    "@commercetools/sdk-client-v2": "^2.5.0",
+    "typescript": "^5.4.5"
+  },
+  "workspaces": [
+    "apiClient",
+    "search"
+  ]
+}

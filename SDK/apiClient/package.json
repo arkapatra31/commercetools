@@ -1,0 +1,15 @@
+{
+  "name": "@sdk/apiclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.11"
+  },
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

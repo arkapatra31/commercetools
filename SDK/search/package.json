@@ -1,0 +1,14 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@sdk/apiclient": "^1.0.0"
+  },
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "author": "",
+  "license": "ISC"
+}

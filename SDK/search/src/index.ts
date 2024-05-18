@@ -1,0 +1,1 @@
+export { productSearch } from "./productProjection";

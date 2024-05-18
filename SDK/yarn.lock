@@ -48,6 +48,10 @@
     node-fetch "^2.6.1"
     uuid "9.0.1"
 
+"@sdk/apiclient@^1.0.0", "@sdk/apiclient@file:D:\\Repositories\\commercetools\\SDK\\apiClient":
+  version "1.0.0"
+  resolved "file:apiClient"
+
 "@types/node-fetch@^2.6.11":
   version "2.6.11"
   resolved "https://registry.npmjs.org/@types/node-fetch/-/node-fetch-2.6.11.tgz"
@@ -69,10 +73,6 @@ abort-controller@3.0.0:
   integrity sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==
   dependencies:
     event-target-shim "^5.0.0"
-
-"apiclient@file:D:\\Repositories\\commercetools\\SDK\\apiClient":
-  version "1.0.0"
-  resolved "file:apiClient"
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -145,6 +145,8 @@ node-fetch@^2.6.1, node-fetch@^2.6.7:
 "search@file:D:\\Repositories\\commercetools\\SDK\\search":
   version "1.0.0"
   resolved "file:search"
+  dependencies:
+    poc "^1.0.0"
 
 tr46@~0.0.3:
   version "0.0.3"
